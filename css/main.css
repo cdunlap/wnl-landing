@@ -74,17 +74,38 @@ body {
     height: 100%;
 }
 main {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -ms-flex-align: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            align-items: center;
+    -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            justify-content: center;
+    -ms-flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            flex-direction: column;
     z-index: 100;
     position: relative;
     top: 20vh;
 }
 #cta {
     animation-delay: 3s;
+    -webkit-animation-delay: 3s;
     animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+#newsletter-signup {
+    animation-delay: 3.5s;
+    -webkit-animation-delay: 3.5s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
 }
 a.btn {
     padding: 10px 15px;
@@ -96,6 +117,7 @@ a.btn {
     font-size: 26px;
     text-decoration: none;
     text-align: center;
+    -webkit-transition: .2s all;
     transition: .2s all;
 }
 a.btn:hover {
@@ -106,8 +128,10 @@ a.btn:hover {
 #star {
     width: 300px;
     height: auto;
-    animation-duration: 1s;
     animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
     position: relative;
 }
 #wnl-text {
@@ -115,8 +139,10 @@ a.btn:hover {
     width: 100%;
     top: 0;
     left: 0;
-    animation-duration: .4s;
     animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    animation-duration: .4s;
+    -webkit-animation-duration: .4s;
 }
 
 /* ==========================================================================
