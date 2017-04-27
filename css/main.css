@@ -100,18 +100,6 @@ main {
     position: relative;
     top: 20vh;
 }
-#cta {
-    animation-delay: 3s;
-    -webkit-animation-delay: 3s;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-}
-#newsletter-signup {
-    animation-delay: 3.5s;
-    -webkit-animation-delay: 3.5s;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-}
 a.btn {
     padding: 10px 15px;
     background: #4c0f89;
@@ -133,10 +121,6 @@ a.btn:hover {
 #star {
     width: 300px;
     height: auto;
-    animation-delay: .5s;
-    -webkit-animation-delay: .5s;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
     position: relative;
 }
 #wnl-text {
@@ -149,7 +133,16 @@ a.btn:hover {
     animation-duration: .4s;
     -webkit-animation-duration: .4s;
 }
+#cta, #newsletter-signup {
+  perspective: 800;
+  -webkit-perspective: 800;
+  width: 100%;
 
+}
+#cta a.btn, #newsletter-signup a.btn {
+  width: 300px;
+  transform-style: preserve-3d;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
