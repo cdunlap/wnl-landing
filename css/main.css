@@ -64,7 +64,10 @@ html, body {
     height: 100%;
 }
 body {
-    background: #19052d;
+    /* background: #19052d; */
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #star-background {
     position: absolute;
@@ -112,7 +115,7 @@ a.btn {
     background: #4c0f89;
     color: #fff;
     display: block;
-    margin-top: 20px;
+    margin: 20px auto;
     font-family: 'Eagle Lake';
     font-size: 26px;
     text-decoration: none;
@@ -125,24 +128,30 @@ a.btn:hover {
     background: #fff200;
     color: #000;
 }
-#star {
-    width: 300px;
-    height: auto;
-    animation-delay: .5s;
-    -webkit-animation-delay: .5s;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    position: relative;
-}
-#wnl-text {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    animation-delay: 1.5s;
-    -webkit-animation-delay: 1.5s;
-    animation-duration: .4s;
+#star_x5F_yellow {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
     -webkit-animation-duration: .4s;
+            animation-duration: .4s;
+}
+#star_x5F_blue {
+    -webkit-animation-delay: 2.2s;
+            animation-delay: 2.2s;
+}
+#whimsy {
+    -webkit-animation-delay: 2.4s;
+            animation-delay: 2.4s;
+}
+#boom {
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    -webkit-animation-duration: .3s;
+            animation-duration: .3s;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* ==========================================================================
